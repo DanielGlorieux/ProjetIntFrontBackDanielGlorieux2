@@ -41,7 +41,7 @@ export const MESSAGES = {
     GENERIC: "Une erreur est survenue",
     NETWORK: "Erreur de connexion au serveur",
     UNAUTHORIZED: "Accès non autorisé",
-    BOOK_NOT_AVAILABLE: "Ce livre n'est pas disponible",
+    BOOK_NOT_AVAILABLE: "Ce livre n'est pas disponible.",
     MAX_LOANS_REACHED: "Limite d'emprunts atteinte",
   },
 };

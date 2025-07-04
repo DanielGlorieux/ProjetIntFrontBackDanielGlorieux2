@@ -10,16 +10,16 @@ Une application web complète pour la gestion des emprunts de livres dans une bi
 
 - Inscription et connexion sécurisée (bcrypt + JWT)
 - Rôles utilisateurs : `admin` et `étudiant`
-- Tableau de bord personnalisé pour chaque rôle
+- Tableau de bord personnalisé pour chaque rôle.
 
 ### Livres
 
 - Gestion des livres : ajout, modification, suppression (admin uniquement)
-- Visualisation des livres disponibles
+- Visualisation des livres disponibles.
 
 ### Emprunts
 
-- Emprunt d’un livre (si disponible)
+- Emprunt d’un livre (si disponible).
 - Retour d’un livre
 - Suivi des dates de retour
 - Statut des emprunts : `actif`, `retourné`, `en retard`
