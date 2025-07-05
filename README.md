@@ -64,3 +64,7 @@ nodemon backend/index.js
 ### Schéma de base de données
 
 voir backend/config/schema.sql
+
+> ⚠️ **Important** : Veuillez mettre à jour les informations de la base de données (host, password, etc) dans backend/config/database.js.
+
+> 📝 **Note** : Assurez-vous d'avoir Node.js version 20.18.3 installé.
