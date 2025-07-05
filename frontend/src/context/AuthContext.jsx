@@ -5,6 +5,7 @@ const AuthContext = createContext();
 const API_BASE_URL = "http://localhost:3001/api";
 
 const api = {
+  // Méthodes d'authentification
   register: async (userData) => {
     const response = await fetch(`${API_BASE_URL}/auth/register`, {
       method: "POST",
@@ -30,6 +31,7 @@ const api = {
     return await response.json();
   },
 
+  // Méthodes pour les livres
   getBooks: async (params = {}) => {
     const queryString = new URLSearchParams(params).toString();
     const response = await fetch(`${API_BASE_URL}/books?${queryString}`);
@@ -73,6 +75,7 @@ const api = {
     return await response.json();
   },
 
+  // Méthodes pour les emprunts
   createLoan: async (bookId, token) => {
     const response = await fetch(`${API_BASE_URL}/loans`, {
       method: "POST",

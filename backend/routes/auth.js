@@ -42,10 +42,12 @@ router.post("/register", async (req, res) => {
     // Hasher le mot de passe
     const hashedPassword = await bcrypt.hash(password, 10);
 
+    const safeStudentId = studentId?.trim() || null;
+
     // Créer l'utilisateur
     const [result] = await db.execute(
       "INSERT INTO users (email, password, first_name, last_name, student_id) VALUES (?, ?, ?, ?, ?)",
-      [email, hashedPassword, firstName, lastName, studentId]
+      [email, hashedPassword, firstName, lastName, safeStudentId]
     );
 
     const token = jwt.sign(
